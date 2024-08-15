@@ -12,27 +12,27 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #dfdfdf;
+    background-color: rgb(255, 207, 255);
 }
 
 .login-box{
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    width: 440px;
-    height: 480px;
+    justify-content: center;
+    width: 450px;
+    height: 400px;
     padding: 30px;
 }
 
 .login-header{
     text-align: center;
-    margin: 20px 0 40px 0;
+    padding: 20px 0 40px 0;
 }
 
 .login-header header{
-    color:#333;
-    font-size: 30px;
     font-weight: 600;
+    font-size: 30px;
+    color:rgb(25, 25, 25);
 }
 
 .input-box .input-field{
@@ -43,14 +43,16 @@ body{
     margin-bottom: 15px;
     border-radius: 30px;
     border: none;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.282); /* deslocamento horizontal (x), deslocamento vertical (y), desfoque(blur) e espalhamento(spread) e cor */
-    outline: none; /* linha ao redor do elemento */
-    transition: transform 0.3s; /* permite aplicar várias transformações a elementos como translação (mover), rotação, escalar e tornar oblíquio. a transformação ao passar o mouse levará 0.3 segundos */
+    box-shadow:0px 5px 3px rgba(0, 0, 0, 0.249); /* deslocamento horizontal (x), deslocamento vertical (y), desfoque(blur) e espalhamento(spread) e cor */
+    outline: none;
+    transition: transform .3s;  /* permite aplicar várias transformações a elementos como translação (mover), rotação, escalar e tornar oblíquio. a transformação ao passar o mouse levará 0.3 segundos */
 }
+
 ::placeholder{
     font-weight: 500;
     color:#222;
 }
+
 .input-field:focus{ /* :focus seletor de pseudo-classe que aplica estilo quando o elemento é focado, como por exemplo, clicado */
     width: 105%;
 }
@@ -58,14 +60,14 @@ body{
 .forgot{
     display: flex;
     justify-content: space-between;
-    margin: 40px;
+    margin: 30px;
 }
 
 section{
     display: flex;
     align-items: center;
     font-size: 14px;
-    color:#555;
+    color:rgb(42, 42, 42);
 }
 
 #check{
@@ -73,33 +75,32 @@ section{
 }
 
 a{
-
-    text-decoration:none;
+    text-decoration: none;
 }
 
 a:hover{
-    text-decoration: underline;
+    text-decoration-line: underline;
 }
 
 section a{
     color:#555;
 }
 
-.input-submit{
+.submit-btn{
     position: relative;
 }
 
-.submit-btn{
+.btn{
     width: 100%;
+    background-color:#222;
     height: 60px;
-    background: #222;
     border: none;
     border-radius: 30px;
     cursor: pointer;
     transition: .3s;
 }
 
-.input-submit label{
+.submit-btn label{
     position: absolute;
     top:45%;
     left:50%;
@@ -110,18 +111,21 @@ section a{
     cursor: pointer;
 }
 
-.submit-btn:hover{
-    background: #000;
-    transform: scale(1.05,1);
+.btn:hover{
+    transform: scale(1.05, 1);
 }
 
-.sign-up-link{
+.btn:hover{
+    background: #000;
+}
+
+.register-link{
     text-align: center;
     font-size: 15px;
     margin-top: 20px;
 }
 
-.sign-up-link a{
+.register-link a{
     color:#000;
     font-weight: 600;
 }
